@@ -1,0 +1,27 @@
+{
+  "name": "ueditor-angular",
+  "version": "1.0.0",
+  "description": "angular directive for UEditor",
+  "main": "index.js",
+  "authors": [
+    "tu.wenpan"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "ueditor",
+    "ueditor-angular"
+  ],
+  "homepage": "https://github.com/twp0217/ueditor-angular",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": ">=1.2.0"
+  }
+}
