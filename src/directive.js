@@ -1,5 +1,5 @@
 angular.module('ueditor-angular', [])
-    .directive('ueditorAngular', function () {
+    .directive('ueditorAngular', ["$timeout", function ($timeout) {
         return {
             restrict: 'E',
             require: 'ngModel',
@@ -34,9 +34,11 @@ angular.module('ueditor-angular', [])
                             });
                         });
                         ueditor.addListener('contentChange', function(){
-                            ctrl.$setViewValue(ueditor.getContent());
-                            $scope.onContentChange({
-                                $content: ueditor.getContent()
+                            $timeout(function(){
+                                ctrl.$setViewValue(ueditor.getContent());
+                                $scope.onContentChange({
+                                    $content: ueditor.getContent()
+                                });
                             });
                         });
                     };
@@ -67,4 +69,4 @@ angular.module('ueditor-angular', [])
                 new ueditorAngular(container, $scope.setting);
             }
         }
-    });
+    }]);
