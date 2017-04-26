@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ECharts angular</title>
+
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" ui-sref="demo">ueditor-angular</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a ui-sref="demo">演示(Domo)</a></li>
+                    <li><a ui-sref="documentation">文档(Documentation)</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>ueditor-angular</h1>
+            <p>angular directive for UEditor(基于AngularJS的UEditor指令)</p>
+            <p><a class="btn btn-primary btn-lg" href="https://github.com/twp0217/ueditor-angular" target="_blank">View on GitHub</a></p>
+        </div>
+    </div>
+    <div class="container" ui-view></div>
+
+    <script type="text/javascript" src="//cdn.bootcss.com/angular.js/1.2.0/angular.min.js"></script>
+    <script type="text/javascript" src="//cdn.bootcss.com/angular-ui-router/0.3.0/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="lib/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" src="lib/ueditor/ueditor.all.js"></script>
+    <script type="text/javascript" src="https://twp0217.github.io/ueditor-angular/bower_components/ueditor-angular/dist/ueditor-angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controller.js"></script>
+</body>
+
+</html>
