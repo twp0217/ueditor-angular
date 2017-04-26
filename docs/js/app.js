@@ -7,11 +7,11 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
     $stateProvider
         .state('demo', {
             url: '/demo',
-            templateUrl: 'views/demo.html'
+            templateUrl: './views/demo.html'
         })
         .state('documentation', {
             url: '/documentation',
-            templateUrl: 'views/documentation.html'
+            templateUrl: './views/documentation.html'
         });
         
     $urlRouterProvider.otherwise('/documentation');
